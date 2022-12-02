@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  main {
+    min-height: 100vh;
+    position: relative;
+
+    .video-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh !important;
+      object-fit: content;
+    }
+
+    .login {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin: 0 auto;
+      z-index: 2;
+      position: relative;
+      padding-top: 180px;
+      form {
+        // width: 30%;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 0.5em;
+        padding: 30px;
+        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.541);
+
+        .title-form {
+          h1 {
+            // font-weight: bold;
+          }
+        }
+        .correo {
+          input {
+            background-color: rgba(0, 0, 0, 0.719);
+            color: white;
+          }
+        }
+
+        .password {
+          input {
+            background-color: rgba(0, 0, 0, 0.719);
+            color: #fff;
+          }
+        }
+        .registro {
+          p {
+            a {
+              text-decoration: none;
+              b {
+                &:hover {
+                  color: rgb(148, 148, 148);
+                }
+              }
+            }
+          }
+        }
+        .botones-form {
+          button {
+            background-color: #000;
+            border-color: #fff;
+
+            &:hover {
+              background-color: rgba(82, 9, 9, 0.404);
+              border-color: rgba(82, 9, 9, 0.404);
+              border-color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    .register {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin: 0 auto;
+      z-index: 2;
+      position: relative;
+      padding-top: 20px;
+      form {
+        // width: 30%;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 0.5em;
+        padding: 30px;
+        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.541);
+
+        .title-form {
+          h1 {
+            // font-weight: bold;
+          }
+        }
+        .correo {
+          input {
+            background-color: rgba(0, 0, 0, 0.719);
+            color: white;
+          }
+        }
+
+        .password {
+          input {
+            background-color: rgba(0, 0, 0, 0.719);
+            color: #fff;
+          }
+        }
+        .selectPreferences {
+          .form-select {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #fff;
+          }
+        }
+
+        .registro {
+          p {
+            a {
+              text-decoration: none;
+              b {
+                &:hover {
+                  color: rgb(148, 148, 148);
+                }
+              }
+            }
+          }
+        }
+        .botones-form {
+          button {
+            background-color: #000;
+            border-color: #fff;
+
+            &:hover {
+              background-color: rgba(82, 9, 9, 0.404);
+              border-color: rgba(82, 9, 9, 0.404);
+              border-color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

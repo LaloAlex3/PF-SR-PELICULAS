@@ -1,0 +1,13 @@
+<?php
+include "../Modelo/conexion.php";
+include "../Modelo/usuarioDAO.php";
+
+//Hacemos la inserción
+if (isset($_POST)) {
+    $dDAO = new usuarioDAO($conn);
+
+    $metodo = $dDAO->insertaUsuario();
+
+    echo json_encode($metodo, JSON_UNESCAPED_UNICODE);
+
+}
