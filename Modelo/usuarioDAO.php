@@ -36,4 +36,37 @@ class usuarioDAO
 
         mysqli_close($conn);
     }
+
+    public function login(){
+        include "conexion.php";
+
+        session_start();
+
+        $user = $_POST['correo'];
+        $contrasena = $_POST['contrasena'];
+
+        $query = ("SELECT * FROM users WHERE cElectronico='$user' AND contrasena = '$contrasena'");
+
+        $queryResult = mysqli_query($conn, $query);
+
+        if ($row = $queryResult->fetch_assoc()) {
+
+            $_SESSION['login'] = true;
+            $_SESSION['user'] = $row['nUsuario'];
+            $_SESSION['gustos'] = $row['gPeliculas'];
+            
+            echo "1";
+        } else {
+            echo "0";
+        }
+        
+    }
+
+    public function logout()
+    {
+        session_start();
+
+        session_unset();
+        session_destroy();
+    }
 }

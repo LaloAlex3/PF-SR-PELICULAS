@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrate</title>
+
+    <!-- Bootstrap - CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap - JavaScript -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- SweetAlert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/main.css" />
+
+    <!-- Código JavaScript "IMPORTANTE PONER DEFER" -->
+    <script defer src="sUsuario.js"></script>
+  </head>
+  <body onload="sesionIniciada();">
+    <main id="hero">
+      <!-- video -->
+      <!-- <div class="container">
+        <div class="video-background">
+          <video id="video1" autoplay="true" loop="true">
+            <source src="../videos/video1.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div> -->
+      <!-- Header -->
+      <header>
+      <nav class="navbar navbar-expand-lg bg-transparent sticky-top">
+        <div class="container">
+          <!-- Pestañas -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Offcanvas
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <!-- Pestañas izquierda -->
+              <ul class="navbar-nav justify-content-start align-items-center">
+                <li class="nav-item">
+                  <a
+                    class="nav-link logout"
+                    aria-current="page"
+                    >Información</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <input type="button" id="login" value="Salir" 
+                class="btn btn-outline-danger" onclick="cerrarSesion();">
+    </header>
+
+    </main>
+  </body>
+</html>

@@ -33,4 +33,29 @@
 // //         HTMLResponse.innerHTML = `<ul>${tpl}</ul>`;
 // // });
 
-console.log("funcionando")
+// console.log("funcionando 😍");
+
+let form = document.querySelector("#formulario");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  //Nueva información de Formulario de este formulario
+  let datos = new FormData(formulario);
+
+  fetch("./Controlador/login.php", {
+    method: "POST",
+    body: datos,
+  })
+    // console.log(datos)
+    .then((res) => res.text())
+    .then((data) => {
+      console.log(data);
+    if (data == "1") {
+      window.location.href = "./Vista/sUsuario/sUsuario.html";
+    } else{
+      alert("Usuario o Contraseña incorrectos");
+      formulario.reset();
+    }
+    });
+});

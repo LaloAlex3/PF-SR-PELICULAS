@@ -22,11 +22,15 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- SweetAlert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css" />
 
     <!-- Código JavaScript "IMPORTANTE PONER DEFER" -->
     <script defer src="index.js"></script>
+
   </head>
   <body>
     <main id="hero">
@@ -40,7 +44,7 @@
       </div>
       <!-- Formulario -->
       <div class="container login">
-        <form method="post" onSubmit="enviar(this)" class="row g-3 w-50 text-light">
+        <form id="formulario" method="POST" class="row g-3 w-50 text-light">
           <div class="mb-1 text-center title-form">
             <h1>Login</h1>
           </div>
@@ -52,6 +56,7 @@
               id="exampleFormControlInput1"
               placeholder="Correo Electrónico"
               required="true"
+              name="correo"
             />
           </div>
           <!-- Contraseña -->
@@ -62,11 +67,12 @@
               id="inputPassword2"
               placeholder="Contraseña"
               required="true"
+              name="contrasena"
             />
           </div>
           <!-- Login -->
           <div class="text-center botones-form">
-            <button type="submit" class="btn btn-primary w-75">Login</button>
+            <button type="submit" class="btn btn-primary w-75 enviar">Login</button>
           </div>
           <!-- Condiciones -->
           <div class="registro text-center">

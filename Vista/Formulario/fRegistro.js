@@ -4,7 +4,6 @@ let form = document.querySelector("#formulario");
 
 form.addEventListener("submit", function (e) {
     e.preventDefault()
-    console.log("me diste un click")
 
     //Nueva información de Formulario de este formulario
     let datos = new FormData(formulario)
