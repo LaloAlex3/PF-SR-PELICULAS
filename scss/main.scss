@@ -269,4 +269,101 @@ body {
       }
     }
   }
+
+  //Resultados de búsqueda
+  .resultadosDeBusqueda {
+    .container {
+      padding: 30px 42px 50px 42px;
+      .titlesMovies {
+        span {
+          font-size: 1.125vw;
+          color: grey;
+          flex: 0 auto;
+          margin-right: 15px;
+          white-space: nowrap;
+        }
+        .movies {
+          padding-left: 0;
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0;
+          padding: 0;
+          li {
+            border-right: 1px solid #fff;
+            .titleMovie {
+              a {
+                text-decoration: none;
+                font-size: 1.125vw;
+                color: #fff;
+                padding: 0 10px;
+                line-height: 1.6;
+
+                &:hover {
+                  color: red;
+                }
+              }
+            }
+          }
+        }
+      }
+      #movieResults {
+        .col {
+          a {
+            img {
+              height: 293px !important;
+              border-radius: 0.2em;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //Detalles de Película
+  .detallesDeLaPelicula {
+    .container {
+      padding-top: 5rem;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      .imageDetail {
+        border: 3px solid white;
+      }
+      #movieDetail {
+        width: 55%;
+        .titleMovie {
+          color: rgb(207, 204, 25);
+          padding-bottom: 10px;
+        }
+        .year {
+          display: flex;
+          gap: 5px;
+          .rated {
+            background-color: rgba(125, 151, 22, 0.625);
+            padding: 0 5px;
+            border-radius: 0.2em;
+          }
+        }
+        .genre {
+          p {
+            background-color: rgba(125, 151, 22, 0.625);
+            padding: 0 5px;
+            border-radius: 0.1em;
+          }
+        }
+        .language {
+          color: rgb(207, 204, 25);
+        }
+        .nominated {
+          p {
+            i {
+              color: rgb(207, 204, 25);
+            }
+          }
+        }
+      }
+    }
+  }
 }

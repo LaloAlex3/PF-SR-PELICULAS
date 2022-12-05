@@ -182,5 +182,77 @@ body .adminPerfil .container form div button a:hover {
 body .adminPerfil .container .form-control::placeholder {
   color: #ccc;
 }
+body .resultadosDeBusqueda .container {
+  padding: 30px 42px 50px 42px;
+}
+body .resultadosDeBusqueda .container .titlesMovies span {
+  font-size: 1.125vw;
+  color: grey;
+  flex: 0 auto;
+  margin-right: 15px;
+  white-space: nowrap;
+}
+body .resultadosDeBusqueda .container .titlesMovies .movies {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+body .resultadosDeBusqueda .container .titlesMovies .movies li {
+  border-right: 1px solid #fff;
+}
+body .resultadosDeBusqueda .container .titlesMovies .movies li .titleMovie a {
+  text-decoration: none;
+  font-size: 1.125vw;
+  color: #fff;
+  padding: 0 10px;
+  line-height: 1.6;
+}
+body .resultadosDeBusqueda .container .titlesMovies .movies li .titleMovie a:hover {
+  color: red;
+}
+body .resultadosDeBusqueda .container #movieResults .col a img {
+  height: 293px !important;
+  border-radius: 0.2em;
+}
+body .detallesDeLaPelicula .container {
+  padding-top: 5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+body .detallesDeLaPelicula .container .imageDetail {
+  border: 3px solid white;
+}
+body .detallesDeLaPelicula .container #movieDetail {
+  width: 55%;
+}
+body .detallesDeLaPelicula .container #movieDetail .titleMovie {
+  color: rgb(207, 204, 25);
+  padding-bottom: 10px;
+}
+body .detallesDeLaPelicula .container #movieDetail .year {
+  display: flex;
+  gap: 5px;
+}
+body .detallesDeLaPelicula .container #movieDetail .year .rated {
+  background-color: rgba(125, 151, 22, 0.625);
+  padding: 0 5px;
+  border-radius: 0.2em;
+}
+body .detallesDeLaPelicula .container #movieDetail .genre p {
+  background-color: rgba(125, 151, 22, 0.625);
+  padding: 0 5px;
+  border-radius: 0.1em;
+}
+body .detallesDeLaPelicula .container #movieDetail .language {
+  color: rgb(207, 204, 25);
+}
+body .detallesDeLaPelicula .container #movieDetail .nominated p i {
+  color: rgb(207, 204, 25);
+}
 
 /*# sourceMappingURL=main.css.map */
