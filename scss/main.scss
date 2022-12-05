@@ -2,6 +2,56 @@ body {
   margin: 0;
   padding: 0;
 
+  header {
+    nav {
+      padding-top: 20px !important;
+      .container {
+        .offcanvas {
+          .container {
+            form {
+              input {
+                border-radius: 0;
+                // background-color: transparent;
+                color: #000;
+              }
+
+              button {
+                border-radius: 0;
+                background-color: transparent;
+                color: #ccc;
+                border-color: #ccc;
+
+                &:hover {
+                  color: #fff;
+                  border-color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .dropdown-menu {
+      border-radius: 0;
+      border-color: #ccc;
+      background-color: rgba(0, 0, 0, 0.641);
+      li {
+        a {
+          color: #fff;
+        }
+        .dropdown-divider {
+          color: #ccc;
+          border-color: #ccc;
+        }
+      }
+    }
+    .dropdown-item.active,
+    .dropdown-item:active {
+      background-color: var(--bs-dropdown-link-hover-bg);
+      color: var(--bs-dropdown-link-color);
+    }
+  }
+
   main {
     min-height: 100vh;
     position: relative;
@@ -143,6 +193,79 @@ body {
             }
           }
         }
+      }
+    }
+  }
+
+  // Página Inicio Peliculas
+  .peliculas {
+    .container {
+      .row {
+        .col {
+          .card {
+            border-radius: 0;
+            img {
+              border-radius: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Página CRUD -> Administrar Perfil
+  .adminPerfil {
+    .container {
+      form {
+        .titleAdmin {
+          padding-top: 30px;
+          font-size: 4vw;
+          font-weight: 400;
+          font-family: Helvetica;
+          border-bottom: 1px solid #666;
+          color: #fff;
+        }
+        hr {
+          padding: 0;
+          margin: 20px 0 5px 0;
+        }
+        div {
+          input {
+            background-color: #666;
+            border-color: #666;
+            border-radius: 0;
+            color: white;
+          }
+          select {
+            background-color: #666;
+            border-radius: 0;
+            color: white;
+          }
+          button {
+            border-radius: 0;
+            margin: 0px 20px;
+            background-color: transparent;
+            color: #ccc;
+            border-color: #ccc;
+
+            &:hover {
+              color: #fff;
+              border-color: #fff;
+            }
+
+            a {
+              text-decoration: none;
+              color: #ccc;
+
+              &:hover {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+      .form-control::placeholder {
+        color: #ccc;
       }
     }
   }

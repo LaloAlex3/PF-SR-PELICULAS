@@ -2,6 +2,40 @@ body {
   margin: 0;
   padding: 0;
 }
+body header nav {
+  padding-top: 20px !important;
+}
+body header nav .container .offcanvas .container form input {
+  border-radius: 0;
+  color: #000;
+}
+body header nav .container .offcanvas .container form button {
+  border-radius: 0;
+  background-color: transparent;
+  color: #ccc;
+  border-color: #ccc;
+}
+body header nav .container .offcanvas .container form button:hover {
+  color: #fff;
+  border-color: #fff;
+}
+body header .dropdown-menu {
+  border-radius: 0;
+  border-color: #ccc;
+  background-color: rgba(0, 0, 0, 0.641);
+}
+body header .dropdown-menu li a {
+  color: #fff;
+}
+body header .dropdown-menu li .dropdown-divider {
+  color: #ccc;
+  border-color: #ccc;
+}
+body header .dropdown-item.active,
+body header .dropdown-item:active {
+  background-color: var(--bs-dropdown-link-hover-bg);
+  color: var(--bs-dropdown-link-color);
+}
 body main {
   min-height: 100vh;
   position: relative;
@@ -97,6 +131,56 @@ body main .register form .botones-form button:hover {
   background-color: rgba(82, 9, 9, 0.404);
   border-color: rgba(82, 9, 9, 0.404);
   border-color: #fff;
+}
+body .peliculas .container .row .col .card {
+  border-radius: 0;
+}
+body .peliculas .container .row .col .card img {
+  border-radius: 0;
+}
+body .adminPerfil .container form .titleAdmin {
+  padding-top: 30px;
+  font-size: 4vw;
+  font-weight: 400;
+  font-family: Helvetica;
+  border-bottom: 1px solid #666;
+  color: #fff;
+}
+body .adminPerfil .container form hr {
+  padding: 0;
+  margin: 20px 0 5px 0;
+}
+body .adminPerfil .container form div input {
+  background-color: #666;
+  border-color: #666;
+  border-radius: 0;
+  color: white;
+}
+body .adminPerfil .container form div select {
+  background-color: #666;
+  border-radius: 0;
+  color: white;
+}
+body .adminPerfil .container form div button {
+  border-radius: 0;
+  margin: 0px 20px;
+  background-color: transparent;
+  color: #ccc;
+  border-color: #ccc;
+}
+body .adminPerfil .container form div button:hover {
+  color: #fff;
+  border-color: #fff;
+}
+body .adminPerfil .container form div button a {
+  text-decoration: none;
+  color: #ccc;
+}
+body .adminPerfil .container form div button a:hover {
+  color: #fff;
+}
+body .adminPerfil .container .form-control::placeholder {
+  color: #ccc;
 }
 
 /*# sourceMappingURL=main.css.map */

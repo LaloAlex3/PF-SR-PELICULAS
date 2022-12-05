@@ -1,12 +1,11 @@
-console.log("funcionando")
 
-
+/// ****Inicio de Sesión ********
 
 function sesionIniciada() {
   fetch("../../Controlador/validacion.php")
     .then((response) => response.text())
     .then((response) => {
-      console.log(response);
+      // console.log(response);
       if (response == "error") {
         location.reload();
         window.location.href = "../../index.html";
@@ -28,3 +27,7 @@ function cerrarSesion() {
       window.location.href = "../../index.html";
     });
 }
+
+/// **** Fin ********
+
+
