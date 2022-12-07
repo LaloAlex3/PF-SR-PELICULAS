@@ -25,8 +25,10 @@ class usuarioDAO
         $cElectronico = $_POST["correo"];
         $contrasena = $_POST["contrasena"];
         $gPeliculas = json_encode(array('genero' => $_POST['preferencias']));
+        $actoresPeliculas = json_encode(array('actor' => $_POST['actores']));
+        $directoresPeliculas = json_encode(array('director' => $_POST['directores']));
 
-        $query = ("INSERT INTO users(nombre, nUsuario,cElectronico,contrasena,gPeliculas) values('$nombre','$nUsuario','$cElectronico','$contrasena','$gPeliculas')");
+        $query = ("INSERT INTO users(nombre, nUsuario,cElectronico,contrasena,gPeliculas, actoresFavoritos, directoresFavoritos) values('$nombre','$nUsuario','$cElectronico','$contrasena','$gPeliculas', '$actoresPeliculas', '$directoresPeliculas')");
 
         if (mysqli_query($conn, $query)) {
             echo "OK";
@@ -60,6 +62,8 @@ class usuarioDAO
             $_SESSION['cElectronico'] = $row['cElectronico']; 
             $_SESSION['contrasena'] = $row['contrasena']; 
             $_SESSION['gPeliculas'] = $row['gPeliculas']; 
+            $_SESSION['actoresFavoritos'] = $row['actoresFavoritos']; 
+            $_SESSION['directoresFavoritos'] = $row['directoresFavoritos']; 
 
             echo "1";
         } else {
@@ -86,7 +90,9 @@ class usuarioDAO
             "nUsuario" => $_SESSION['nUsuario'],
             "cElectronico" => $_SESSION['cElectronico'],
             "contrasena" => $_SESSION['contrasena'],
-            "gPeliculas" => $_SESSION['gPeliculas']
+            "gPeliculas" => $_SESSION['gPeliculas'],
+            "actoresFavoritos" => $_SESSION['actoresFavoritos'],
+            "directoresFavoritos" => $_SESSION['directoresFavoritos']
         );
 
         return $json;
@@ -104,12 +110,16 @@ class usuarioDAO
         $correo = $_POST["correo"];
         $contrasena = $_POST["contrasena"];
         $gPeliculas = json_encode(array('genero' => $_POST['preferencias']));
+        $actoresPeliculas = json_encode(array('actor' => $_POST['actores']));
+        $directoresPeliculas = json_encode(array('director' => $_POST['directores']));
 
         $query = ("UPDATE users
         SET `nombre` = '$nombre',
         `cElectronico` = '$correo',
         `contrasena` = '$contrasena',
-        `gPeliculas` = '$gPeliculas'
+        `gPeliculas` = '$gPeliculas',
+        `actoresFavoritos` = '$actoresPeliculas',
+        `directoresFavoritos` = '$directoresPeliculas'
         WHERE idUsers = $idUsers");
 
         if (mysqli_query($conn, $query)) {
@@ -121,6 +131,9 @@ class usuarioDAO
         $_SESSION['nombre'] = $nombre;
         $_SESSION['contrasena'] = $contrasena;
         $_SESSION['cElectronico'] = $correo;
+        $_SESSION['gPeliculas'] = $gPeliculas;
+        $_SESSION['actoresFavoritos'] = $actoresPeliculas;
+        $_SESSION['directoresFavoritos'] = $directoresPeliculas;
 
         mysqli_close($conn);
     

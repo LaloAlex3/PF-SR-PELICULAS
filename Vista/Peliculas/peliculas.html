@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movie Detail</title>
+    <title>Movies</title>
 
     <!-- Bootstrap - CSS -->
     <link
@@ -37,11 +37,11 @@
 
     <!-- Código JavaScript "IMPORTANTE PONER DEFER" -->
     <script defer src="../sUsuario/sUsuario.js"></script>
-    <script defer src="../Movie_Search/movieSearch2.js"></script>
-    <script defer src="../Movie_Search/movieDetail.js"></script>
+    <script defer src="../Movie_Search/movieSearch.js"></script>
+    <script defer src="./viewPeliculas.js"></script>
   </head>
 
-  <body onload="sesionIniciada()">
+  <body onload="sesionIniciada();">
     <!-- Header -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -92,7 +92,7 @@
                     <a class="nav-link" href="../Series/series.html">Series</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../Peliculas/peliculas.html">Peliculas</a>
+                    <a class="nav-link active" href="./peliculas.html">Peliculas</a>
                   </li>
                 </ul>
               </div>
@@ -115,7 +115,7 @@
                     Buscar
                   </button>
                 </form>
-                <!-- Usuario -->
+                <!-- Administrar Usuario -->
                 <ul class="navbar-nav mx-3">
                   <li class="nav-item dropdown">
                     <a
@@ -150,9 +150,11 @@
     </header>
 
     <!-- Main -->
-    <main class="bg-dark detallesDeLaPelicula">
-      <!-- Contenedor de la Pelicula -->
-      <div id="containerMovieDetail" class="container"></div>
+    <main class="bg-dark resultadosDePeliculas">
+      <!-- Peliculas -->
+      <div class="container">    
+        <div id="peliculasAPI" class="row row-cols-6 g-2"></div>
+      </div>
     </main>
   </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registrate</title>
+    <title>Index</title>
 
     <!-- Bootstrap - CSS -->
     <link
@@ -37,6 +37,7 @@
 
     <!-- Código JavaScript "IMPORTANTE PONER DEFER" -->
     <script defer src="sUsuario.js"></script>
+    <script defer src="./recomendaciones.js"></script>
     <script defer src="../Movie_Search/movieSearch.js"></script>
 
     
@@ -90,10 +91,10 @@
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="plato_buen_comer.html">Series</a>
+                    <a class="nav-link" href="../Series/series.html">Series</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="fAlimento.php">Peliculas</a>
+                    <a class="nav-link" href="../Peliculas/peliculas.html">Peliculas</a>
                   </li>
                 </ul>
               </div>
@@ -112,7 +113,7 @@
                     Buscar
                   </button>
                 </form>
-                <!-- Usuario -->
+                <!-- Administrar Usuario -->
                 <ul class="navbar-nav mx-3">
                   <li class="nav-item dropdown">
                     <a
@@ -147,65 +148,21 @@
     </header>
 
     <!-- Main -->
-    <main class="bg-dark peliculas">
+    <main class="bg-dark recomendaciones">
       <!-- Peliculas Recomendadas -->
-      <div class="container p-5">
-        <div class="row row-cols-1 row-cols-md-4 g-3">
-          <div class="col">
-            <div class="card w-100">
-              <img
-                src="../../Images/prueba1.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-            </div>
-          </div>
-          <div class="col">
-            <div class="card w-100">
-              <img
-                src="../../Images/prueba2.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-            </div>
-          </div>
-          <div class="col">
-            <div class="card w-100">
-              <img
-                src="../../Images/prueba2.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-            </div>
-          </div>
-          <div class="col">
-            <div class="card w-100">
-              <img
-                src="../../Images/prueba2.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-            </div>
-          </div>
-          <div class="col">
-            <div class="card w-100">
-              <img
-                src="../../Images/prueba2.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-            </div>
-          </div>
-          <div class="col">
-            <div class="card w-100">
-              <img
-                src="../../Images/prueba2.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-            </div>
-          </div>
-        </div>
+      <div class="container moviesByGenre">
+        <h1>Aquí encontraras tus géneros favoritos</h1>
+        <div id="peliculasAPIRecomendadas" class="row row-cols-6 g-2"></div>
+      </div>
+      <!-- Actores Recomendados -->
+      <div class="container moviesByActor">
+        <h1>Aquí encontraras tus actores favoritos</h1>
+        <div id="actoresAPIRecomendados" class="row row-cols-6 g-2"></div>
+      </div>
+      <!-- Directores Recomendados -->
+      <div class="container moviesByDirector">
+        <h1>Aquí encontraras tus directores favoritos</h1>
+        <div id="directoresAPIRecomendados" class="row row-cols-6 g-2"></div>
       </div>
     </main>
   </body>

@@ -132,14 +132,49 @@ body main .register form .botones-form button:hover {
   border-color: rgba(82, 9, 9, 0.404);
   border-color: #fff;
 }
-body .peliculas .container .row .col .card {
-  border-radius: 0;
+body .recomendaciones .moviesByGenre {
+  padding: 0px 42px 0px 42px;
 }
-body .peliculas .container .row .col .card img {
-  border-radius: 0;
+body .recomendaciones .moviesByGenre h1 {
+  color: #ccc;
+  font-size: 2rem;
+  padding-top: 20px;
+}
+body .recomendaciones .moviesByGenre #peliculasAPIRecomendadas .col a img {
+  height: 293px !important;
+  border-radius: 0.2em;
+  object-fit: cover;
+}
+body .recomendaciones .moviesByActor {
+  padding: 0px 42px 50px 42px;
+}
+body .recomendaciones .moviesByActor h1 {
+  color: #ccc;
+  font-size: 2rem;
+  padding-top: 20px;
+}
+body .recomendaciones .moviesByActor #actoresAPIRecomendados .col a img {
+  height: 293px !important;
+  border-radius: 0.2em;
+  object-fit: cover;
+}
+body .recomendaciones .moviesByDirector {
+  padding: 0px 42px 30px 42px;
+}
+body .recomendaciones .moviesByDirector h1 {
+  color: #ccc;
+  font-size: 2rem;
+}
+body .recomendaciones .moviesByDirector #directoresAPIRecomendados .col a img {
+  height: 293px !important;
+  border-radius: 0.2em;
+  object-fit: cover;
+}
+body .adminPerfil .container {
+  padding-bottom: 3rem;
 }
 body .adminPerfil .container form .titleAdmin {
-  padding-top: 30px;
+  padding-top: 20px;
   font-size: 4vw;
   font-weight: 400;
   font-family: Helvetica;
@@ -253,6 +288,22 @@ body .detallesDeLaPelicula .container #movieDetail .language {
 }
 body .detallesDeLaPelicula .container #movieDetail .nominated p i {
   color: rgb(207, 204, 25);
+}
+body .resultadosDeSeries .container {
+  padding: 0px 42px 50px 42px;
+}
+body .resultadosDeSeries .container #seriesAPI .col a img {
+  height: 293px !important;
+  border-radius: 0.2em;
+  object-fit: cover;
+}
+body .resultadosDePeliculas .container {
+  padding: 0px 42px 50px 42px;
+}
+body .resultadosDePeliculas .container #peliculasAPI .col a img {
+  height: 293px !important;
+  border-radius: 0.2em;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=main.css.map */

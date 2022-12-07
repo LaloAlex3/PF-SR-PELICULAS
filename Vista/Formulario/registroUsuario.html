@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registrate</title>
+    <title>Register</title>
 
     <!-- Bootstrap - CSS -->
     <link
@@ -90,7 +90,7 @@
               required="true"
             />
           </div>
-          <!-- Select-Preferences -->
+          <!-- Select-Genres -->
           <div class="selectPreferences">
             <select
             id="generosPeliculas"
@@ -106,7 +106,38 @@
               <option value="suspense">Suspenso</option>
             </select>
           </div>
-
+          <!-- Select-Actors -->
+          <div class="selectPreferences">
+            <select
+            id="actoresPeliculas"
+              class="form-select"
+              multiple
+              aria-label="Default select example"
+              name="actores[]"
+              required
+            >
+              <option selected>Selecciona tus generos preferidos</option>
+              <option value="action">Acción</option>
+              <option value="love">Amor</option>
+              <option value="suspense">Suspenso</option>
+            </select>
+          </div>
+          <!-- Select-Directors -->
+          <div class="selectPreferences">
+            <select
+            id="directoresPeliculas"
+              class="form-select"
+              multiple
+              aria-label="Default select example"
+              name="directores[]"
+              required
+            >
+              <option selected>Selecciona tus generos preferidos</option>
+              <option value="action">Acción</option>
+              <option value="love">Amor</option>
+              <option value="suspense">Suspenso</option>
+            </select>
+          </div>
           <!-- Registro -->
           <div class="text-center botones-form">
             <button type="submit" class="btn btn-primary w-75 enviar">

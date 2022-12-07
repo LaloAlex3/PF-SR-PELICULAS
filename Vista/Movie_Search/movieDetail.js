@@ -35,7 +35,7 @@ fetch(API_URL)
             <p><b>Genre: </b>${data.Genre}</p>
         </div>
         <div class="writer">
-            <p><b>Writer: </b>${data.Writer}</p>
+            <p><b>Director: </b>${data.Director}</p>
             <p><b>Actors: </b>${data.Actors}</p>
         </div>
         <div class="plot">

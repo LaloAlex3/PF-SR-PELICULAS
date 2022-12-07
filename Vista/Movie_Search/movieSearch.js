@@ -1,4 +1,6 @@
-let API_KEY = "apikey=20216e6e";
+// let API_KEY = "apikey=20216e6e"; // Erick
+// let API_KEY = "apikey=b661705f"; // Lalo
+let API_KEY = "apikey=eb053b5d"; // Otro
 let plot = "&plot=full";
 
 //Primera función del buscador de peliculas
