@@ -74,4 +74,10 @@ __________________________________________________________________________
 - Esperaremos a que se generé la conexión (En caso de que la conexión sea exitosa los nombres de Apache y Mysql tendrán un fondo color verde).
 - Ahora abriremos nuestro navegador preferido y copiaremos la siguiente ruta editando primeramente el apartado de "NoServidor" con el número de servidor donde se esta corriendo xampp "http://localhost:NoServidor/xampp/".
 - Una vez que se genero la edición del numero de servidor de manera correcta, procederemos a pegar la liga en nuestro navegador preferido.
-- Finalmnete, seleccionaremos el nombre del proyecto y ya podrémos empezar a ejecutarlo de manera correcta.
+- Finalmente, seleccionaremos el nombre del proyecto y ya podrémos empezar a ejecutarlo de manera correcta.
+
+________________________________________________________________
+## 🥷 _Autor: Erick Raul Loza & Eduardo Alejandro Rodriguez_
+________________________________________________________________
+##  🆘 _Ayuda:_
+Si tienes alguna duda de funcionalidad con el proyecto puedes contactarme en: https://www.linkedin.com/in/erick-raul-loza-dom%C3%ADnguez-a86504239/
