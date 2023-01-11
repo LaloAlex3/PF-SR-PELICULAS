@@ -61,7 +61,8 @@ fetch("../../Controlador/mDatosUsuario.php")
               if (
                 data2.Poster != "N/A" &&
                 data2.Poster !=
-                  "https://m.media-amazon.com/images/M/MV5BMTU3MTIxMDM2N15BMl5BanBnXkFtZTcwOTMwOTgxMQ@@._V1_SX300.jpg"
+                "https://m.media-amazon.com/images/M/MV5BMTU3MTIxMDM2N15BMl5BanBnXkFtZTcwOTMwOTgxMQ@@._V1_SX300.jpg" &&
+                !dataGeneros.includes(data2)
               ) {
                 dataGeneros.push(data2);
               }
@@ -75,7 +76,8 @@ fetch("../../Controlador/mDatosUsuario.php")
               if (
                 data2.Poster != "N/A" &&
                 data2.Poster !=
-                  "https://m.media-amazon.com/images/M/MV5BMTU3MTIxMDM2N15BMl5BanBnXkFtZTcwOTMwOTgxMQ@@._V1_SX300.jpg"
+                  "https://m.media-amazon.com/images/M/MV5BMTU3MTIxMDM2N15BMl5BanBnXkFtZTcwOTMwOTgxMQ@@._V1_SX300.jpg" &&
+                !dataActores.includes(data2)
               ) {
                 dataActores.push(data2);
               }
@@ -87,7 +89,8 @@ fetch("../../Controlador/mDatosUsuario.php")
               if (
                 data2.Poster != "N/A" &&
                 data2.Poster !=
-                  "https://m.media-amazon.com/images/M/MV5BMTU3MTIxMDM2N15BMl5BanBnXkFtZTcwOTMwOTgxMQ@@._V1_SX300.jpg"
+                "https://m.media-amazon.com/images/M/MV5BMTU3MTIxMDM2N15BMl5BanBnXkFtZTcwOTMwOTgxMQ@@._V1_SX300.jpg" &&
+                !dataDirectores.includes(data2)
               ) {
                 dataDirectores.push(data2);
               }
