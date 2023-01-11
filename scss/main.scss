@@ -54,41 +54,31 @@ body {
   }
 
   // Main
-  main {
-    min-height: 100vh;
-    position: relative;
-
+  #hero {
     .video-background {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100vh !important;
-      object-fit: content;
+      #video1 {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        transform: translateX(calc((100% - 100vw) / 2));
+        z-index: -2;
+      }
     }
 
     .login {
+      min-height: 100vh;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 100%;
-      margin: 0 auto;
-      z-index: 2;
-      position: relative;
-      padding-top: 180px;
+
       form {
-        // width: 30%;
         background-color: rgba(0, 0, 0, 0.4);
         border-radius: 0.5em;
         padding: 30px;
         box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.541);
 
-        .title-form {
-          h1 {
-            // font-weight: bold;
-          }
-        }
         .correo {
           input {
             background-color: rgba(0, 0, 0, 0.719);
@@ -130,27 +120,18 @@ body {
     }
 
     .register {
+      min-height: 100vh;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 100%;
-      margin: 0 auto;
-      z-index: 2;
-      position: relative;
-      padding-top: 20px;
+      padding: 3rem 0;
+
       form {
-        // width: 30%;
         background-color: rgba(0, 0, 0, 0.4);
         border-radius: 0.5em;
         padding: 30px;
         box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.541);
 
-        .title-form {
-          h1 {
-            // font-weight: bold;
-          }
-        }
         .correo {
           input {
             background-color: rgba(0, 0, 0, 0.719);
@@ -201,6 +182,7 @@ body {
 
   // Recomendaciones Sesión Usuario
   .recomendaciones {
+    min-height: 94vh;
     .moviesByGenre {
       padding: 0px 42px 0px 42px;
       h1 {
@@ -263,10 +245,12 @@ body {
   // Página CRUD -> Administrar Perfil
   .adminPerfil {
     .container {
-      padding-bottom: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       form {
+        padding: 2rem 0;
         .titleAdmin {
-          padding-top: 20px;
           font-size: 4vw;
           font-weight: 400;
           font-family: Helvetica;
@@ -320,6 +304,7 @@ body {
 
   //Resultados de búsqueda
   .resultadosDeBusqueda {
+    min-height: 100vh;
     .container {
       padding: 30px 42px 50px 42px;
       .titlesMovies {
@@ -369,8 +354,12 @@ body {
 
   //Detalles de Película
   .detallesDeLaPelicula {
+    min-height: 94vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     .container {
-      padding-top: 5rem;
       color: white;
       display: flex;
       justify-content: center;
@@ -417,6 +406,8 @@ body {
 
   //Resultados de Series
   .resultadosDeSeries {
+    min-height: 94vh;
+
     .container {
       padding: 0px 42px 50px 42px;
       #seriesAPI {
@@ -435,6 +426,7 @@ body {
 
   //Resultados de Peliculas
   .resultadosDePeliculas {
+    min-height: 100vh;
     .container {
       padding: 0px 42px 50px 42px;
       #peliculasAPI {

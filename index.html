@@ -30,17 +30,14 @@
 
     <!-- Código JavaScript "IMPORTANTE PONER DEFER" -->
     <script defer src="index.js"></script>
-
   </head>
   <body>
     <main id="hero">
       <!-- Video -->
-      <div class="container">
-        <div class="video-background">
+      <div class="container video-background">
         <video id="video1" autoplay="true" loop="true">
           <source src="./videos/video1.mp4" type="video/mp4" />
         </video>
-      </div>
       </div>
       <!-- Formulario -->
       <div class="container login">
@@ -72,12 +69,24 @@
           </div>
           <!-- Login -->
           <div class="text-center botones-form">
-            <button type="submit" class="btn btn-primary w-75 enviar">Login</button>
+            <button type="submit" class="btn btn-primary w-75 enviar">
+              Login
+            </button>
           </div>
           <!-- Condiciones -->
           <div class="registro text-center">
-            <p>Al registrate, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
-            <p>¿No tienes una cuenta? <a href="./Vista/Formulario/registroUsuario.html" class="text-light"><b>Registrate</b></a></p>
+            <p>
+              Al registrate, aceptas nuestras Condiciones de uso y Política de
+              privacidad.
+            </p>
+            <p>
+              ¿No tienes una cuenta?
+              <a
+                href="./Vista/Formulario/registroUsuario.html"
+                class="text-light"
+                ><b>Registrate</b></a
+              >
+            </p>
           </div>
         </form>
       </div>
